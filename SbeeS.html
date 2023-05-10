@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SbeeS</title>
+    <link rel="stylesheet" href="SbeeS.css">
+</head>
+<body id="001">
+    <div class="main">
+        <nav>
+        <div class="logo">
+            <h3>SbeeS</h3>
+        </div>
+        <div class="nav-link">
+            <ul>
+                <li><a href="/SbeeS.html" target="_blank">Home</a></li>
+                <li><a href="/SbeeS_login.html" target="_blank">Login</a></li>
+                <li><a href="/SbeeS.html" target="_blank">Services</a></li>
+                <li><a href="/SbeeS_contacts.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="sbees-logo.png" class="info_img" width="35px" height="150px">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="int_icon.png">
+                    <div>
+                        <h1>get Interviewed</h1>
+                        <p>an interview from a well- experienced personality</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="cost_icon.png">
+                    <div>
+                        <h1>Cost Efficient</h1>
+                        <p>Best Services at lowest prices</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="eval.jpg">
+                    <div>
+                        <h1>Better Evaluations</h1>
+                        <p>Get Precise Evaluation reports</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="rm.png"> 
+                    <div>
+                        <h1>Development Cover</h1>
+                        <p>get your personalised development roadmap</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <img src="up.png" id="upbtn">
+            <h3>WHY US?</h3>
+            <img src="up.png" id="downbtn">
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Interview</a></li>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="/SbeeS_login.html">Login</a></li>
+                            <li><a href="/SbeeS_login.html">Signup</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="col-md-6 item text">
+                        <h3>Company Name</h3>
+                        <p>SbeeS</p>
+                    </div>
+                    <br>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">SbeeS © 2023</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script>
+        var circle= document.getElementById("circle");
+        var upbtn= document.getElementById("upbtn");
+        var downbtn= document.getElementById("downbtn");
+
+
+        var rotateValue= circle.style.transform;
+
+        var rotateSum;
+
+        upbtn.onclick= function()
+        {
+            rotateSum= rotateValue+ "rotate(-90deg)";
+            circle.style.transform= rotateSum;
+            rotateValue= rotateSum;
+        }
+
+        downbtn.onclick= function()
+        {
+            rotateSum= rotateValue+ "rotate(90deg)";
+            circle.style.transform= rotateSum;
+            rotateValue= rotateSum;
+        }
+
+    </script>
+</body>
+</html>
